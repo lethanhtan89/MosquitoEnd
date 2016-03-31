@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context =".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/mosquito_title"
+            android:id="@+id/img_title" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:src="@drawable/pic_sound_1"
+            android:id="@+id/img_mos1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:src="@drawable/pic_sound_2"
+            android:id="@+id/img_mos2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:src="@drawable/pic_sound_3"
+            android:id="@+id/img_mos3" />
+    </LinearLayout>
+</RelativeLayout>
+<!-- From: file:/D:/PROJECT/ANDROID/Mosquitoend/app/src/main/res/layout-land/activity_main.xml -->
