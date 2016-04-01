@@ -1,5 +1,6 @@
 package mosquito.project.com.mosquiteend;
 
+import android.animation.ObjectAnimator;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -29,14 +30,14 @@ public class Mosquito1Activity extends AppCompatActivity {
     private AnalogClock analogClock;
     private DigitalClock digitalClock;
     private MediaPlayer mediaPlayer;
-    private String timeCurent;
     private Context context = this;
     private Handler handler;
     private Runnable runnable;
+    private ObjectAnimator objectAnimator;
     private static final int POST_DISPLAY_TIME_30 = 1800000;
     private static final int POST_DISPLAY_TIME_60 = 3600000;
     private static final int POST_DISPLAY_TIME_90 = 5400000;
-    private Boolean isOnePressed = false, isSecondPlace = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,18 +49,15 @@ public class Mosquito1Activity extends AppCompatActivity {
         btAlarm60 = (Button) findViewById(R.id.btalarm60);
         btAlarm90 = (Button) findViewById(R.id.btalarm90);
         imageView = (ImageView) findViewById(R.id.imgMos);
-        //txtTime = (TextView) findViewById(R.id.txtTime);
         analogClock = (AnalogClock) findViewById(R.id.analogClock);
         digitalClock = (DigitalClock) findViewById(R.id.digitalClock);
-
-        //timeCurent = DateFormat.getDateTimeInstance().format(new Date());
-
-        //txtTime.setText(timeCurent);
 
         btOn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btOn.setBackgroundColor(getResources().getColor(R.color.button_change));
+                //btOn.setBackgroundColor(getResources().getColor(R.color.button_change));
+                //btOn.invalidate();
+                objectAnimator = ObjectAnimator.ofFloat(Mosquito1Activity.this, "", 9,2).setDuration(90);
                 mediaPlayer = MediaPlayer.create(Mosquito1Activity.this, R.raw.mosquito_sound1);
                 mediaPlayer.start();
             }
@@ -68,7 +66,7 @@ public class Mosquito1Activity extends AppCompatActivity {
         btOff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btOff.setBackgroundColor(getResources().getColor(R.color.button_change));
+                //btOff.setBackgroundColor(getResources().getColor(R.color.button_change));
                 if (mediaPlayer.isPlaying()) {
                     mediaPlayer.pause();
                 }
@@ -78,7 +76,7 @@ public class Mosquito1Activity extends AppCompatActivity {
         btAlarm30.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btAlarm30.setBackgroundColor(getResources().getColor(R.color.button_change));
+                //btAlarm30.setBackgroundColor(getResources().getColor(R.color.button_change));
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setTitle("SET ALARM");
                 builder.setMessage("Would you like set alarm after 30 minutes ?");
@@ -105,7 +103,7 @@ public class Mosquito1Activity extends AppCompatActivity {
         btAlarm60.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btAlarm60.setBackgroundColor(getResources().getColor(R.color.button_change));
+                //btAlarm60.setBackgroundColor(getResources().getColor(R.color.button_change));
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setTitle("SET ALARM");
                 builder.setMessage("Would you like to set alarm after 60 minutes");
@@ -132,7 +130,7 @@ public class Mosquito1Activity extends AppCompatActivity {
         btAlarm90.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btAlarm90.setBackgroundColor(getResources().getColor(R.color.button_change));
+                //btAlarm90.setBackgroundColor(getResources().getColor(R.color.button_change));
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setTitle("SET ALARM");
                 builder.setMessage("Would you like to set alarm after 90 minutes ");
@@ -169,8 +167,6 @@ public class Mosquito1Activity extends AppCompatActivity {
     //set Sound Alarm After 30 minutes
     public void setAlarmAfter30(){
             mediaPlayer = MediaPlayer.create(Mosquito1Activity.this, R.raw.mosquito_sound1);
-            //mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-            //mediaPlayer.setLooping(true);
             handler = new Handler();
             runnable = new Runnable() {
                 @Override
