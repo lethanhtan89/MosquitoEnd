@@ -14,7 +14,7 @@ import org.w3c.dom.ProcessingInstruction;
 public class SplashActivity extends AppCompatActivity {
     private Runnable runnable;
     private Handler handler;
-    private static final int POST_DISPLAY_TIME = 2000;
+    private static final int POST_DISPLAY_TIME = 1500;
     private ImageView imgSplash;
 
     @Override
@@ -29,6 +29,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(i);
+                overridePendingTransition(R.animator.in, R.animator.out);
                 finish();
             }
         };
