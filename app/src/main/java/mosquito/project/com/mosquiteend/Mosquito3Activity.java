@@ -153,7 +153,7 @@ public class Mosquito3Activity extends AppCompatActivity {
         };
         handler.postDelayed(runnable, POST_DISPLAY_TIME_30);
     }
-
+//Set alarm 60 minites
     public void setAlarmAfter60(){
         mediaPlayer = MediaPlayer.create(Mosquito3Activity.this, R.raw.mosquito_sound1);
         handler = new Handler();
