@@ -40,6 +40,7 @@
     <!-- From: file:/D:/PROJECT/ANDROID/MosquitoEnd/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="button">#FFFFFF</color>
+    <color name="button_change">#FF9900</color>
     <!-- From: file:/D:/PROJECT/ANDROID/MosquitoEnd/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="button_material_dark">#ff5a595b</color>
@@ -1284,7 +1285,6 @@
     <!-- From: file:/D:/PROJECT/ANDROID/MosquitoEnd/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="MosquitoEnd" parent="MyMaterialTheme.Base">
-
     </style>
     <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="windowNoTitle">true</item>
