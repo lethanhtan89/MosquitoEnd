@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     tools:context=".Mosquito1Activity"
     android:background="#010101">
 
@@ -42,8 +43,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ON"
-                android:background="@color/button"
                 android:id="@+id/btOn"
+                android:theme="@style/MyButton"
                 android:layout_marginRight="10dp" />
 
             <Button
@@ -51,8 +52,7 @@
                 android:layout_height="wrap_content"
                 android:text="OFF"
                 android:id="@+id/btOff"
-                android:background="@color/button" />
-
+                android:theme="@style/MyButton" />
         </LinearLayout>
 
         <TextView
@@ -71,7 +71,7 @@
             android:text="ALARM 30 MINUTES"
             android:id="@+id/btalarm30"
             android:layout_marginTop="5dp"
-            android:background="@color/button"
+            android:theme="@style/MyButton"
             android:layout_gravity="center_horizontal" />
 
         <Button
@@ -80,7 +80,7 @@
             android:text="ALARM 60 MINUTES"
             android:id="@+id/btalarm60"
             android:layout_marginTop="5dp"
-            android:background="@color/button"
+            android:theme="@style/MyButton"
             android:layout_gravity="center_horizontal" />
 
         <Button
@@ -89,7 +89,7 @@
             android:text="ALARM 90 MINUTES"
             android:id="@+id/btalarm90"
             android:layout_marginTop="5dp"
-            android:background="@color/button"
+            android:theme="@style/MyButton"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
 </LinearLayout>

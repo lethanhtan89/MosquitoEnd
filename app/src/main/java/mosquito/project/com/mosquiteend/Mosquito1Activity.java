@@ -57,7 +57,6 @@ public class Mosquito1Activity extends AppCompatActivity {
             public void onClick(View v) {
                 //btOn.setBackgroundColor(getResources().getColor(R.color.button_change));
                 //btOn.invalidate();
-                objectAnimator = ObjectAnimator.ofFloat(Mosquito1Activity.this, "", 9,2).setDuration(90);
                 mediaPlayer = MediaPlayer.create(Mosquito1Activity.this, R.raw.mosquito_sound1);
                 mediaPlayer.start();
             }
