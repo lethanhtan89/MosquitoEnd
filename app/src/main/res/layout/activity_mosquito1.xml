@@ -6,12 +6,7 @@
     xmlns:custom="http://schemas.android.com/apk/res-auto"
     tools:context=".Mosquito1Activity"
     android:background="#010101">
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
+    <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
@@ -96,5 +91,4 @@
                 android:theme="@style/MyButton"
                 android:layout_gravity="center_horizontal" />
         </LinearLayout>
-    </FrameLayout>
 </LinearLayout>
