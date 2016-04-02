@@ -159,7 +159,7 @@ public class Mosquito1Activity extends AppCompatActivity {
         super.onBackPressed();
         Intent i = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(i);
-        overridePendingTransition(R.animator.in,R.animator.out);
+        //overridePendingTransition(R.animator.card_flip_left_in,R.animator.card_flip_left_out);
         finish();;
     }
 
