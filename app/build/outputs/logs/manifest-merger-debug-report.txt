@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:2:1-29:12
+ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:2:1-28:12
 	package
 		ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:3:5-47
 		INJECTED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml

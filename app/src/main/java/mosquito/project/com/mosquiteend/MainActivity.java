@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btSound1, btSound2, btSound3;
     private ImageView imgMos1,imgMos2, imgMos3, imgTitle;
     private Context context = this;
+    private View myview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         imgMos3 = (ImageView) findViewById(R.id.img_mos3);
         imgTitle = (ImageView) findViewById(R.id.img_title);
 
+        overridePendingTransition(R.animator.activity_open_translate, R.animator.activity_close_scale);
         imgMos1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

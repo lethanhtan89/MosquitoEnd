@@ -25,8 +25,12 @@ public final class R {
         public static final int design_snackbar_out=0x7f05000d;
     }
     public static final class animator {
-        public static final int in=0x7f060000;
-        public static final int out=0x7f060001;
+        public static final int activity_close_scale=0x7f060000;
+        public static final int activity_close_translate=0x7f060001;
+        public static final int activity_open_scale=0x7f060002;
+        public static final int activity_open_translate=0x7f060003;
+        public static final int in=0x7f060004;
+        public static final int out=0x7f060005;
     }
     public static final class array {
         public static final int nav_drawer_labels=0x7f0d0000;

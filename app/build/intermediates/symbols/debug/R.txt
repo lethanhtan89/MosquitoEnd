@@ -12,8 +12,12 @@ int anim design_fab_in 0x7f05000a
 int anim design_fab_out 0x7f05000b
 int anim design_snackbar_in 0x7f05000c
 int anim design_snackbar_out 0x7f05000d
-int animator in 0x7f060000
-int animator out 0x7f060001
+int animator activity_close_scale 0x7f060000
+int animator activity_close_translate 0x7f060001
+int animator activity_open_scale 0x7f060002
+int animator activity_open_translate 0x7f060003
+int animator in 0x7f060004
+int animator out 0x7f060005
 int array nav_drawer_labels 0x7f0d0000
 int attr actionBarDivider 0x7f0100a7
 int attr actionBarItemBackground 0x7f0100a8

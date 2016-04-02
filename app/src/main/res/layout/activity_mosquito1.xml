@@ -7,89 +7,94 @@
     tools:context=".Mosquito1Activity"
     android:background="#010101">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="104dp"
-            android:id="@+id/imgMos"
-            android:src="@drawable/pic_sound_1"
-            android:layout_gravity="center_horizontal" />
-
-        <AnalogClock
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/analogClock"
-            android:layout_gravity="center_horizontal" />
-
-        <DigitalClock
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/digitalClock"
-            android:textColor="@color/button"
-            android:layout_marginBottom="5dp"
-            android:layout_gravity="center_horizontal" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal">
+            android:layout_height="wrap_content">
 
-            <Button
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="104dp"
+                android:id="@+id/imgMos"
+                android:src="@drawable/pic_sound_1"
+                android:layout_gravity="center_horizontal" />
+
+            <AnalogClock
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ON"
-                android:id="@+id/btOn"
+                android:id="@+id/analogClock"
+                android:layout_gravity="center_horizontal" />
+
+            <DigitalClock
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/digitalClock"
+                android:textColor="@color/button"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ON"
+                    android:id="@+id/btOn"
+                    android:theme="@style/MyButton"
+                    android:layout_marginRight="10dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OFF"
+                    android:id="@+id/btOff"
+                    android:theme="@style/MyButton" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="SET ALARM"
+                android:textColor="@color/button"
+                android:id="@+id/textView"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ALARM 30 MINUTES"
+                android:id="@+id/btalarm30"
+                android:layout_marginTop="5dp"
                 android:theme="@style/MyButton"
-                android:layout_marginRight="10dp" />
+                android:layout_gravity="center_horizontal" />
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="OFF"
-                android:id="@+id/btOff"
-                android:theme="@style/MyButton" />
+                android:text="ALARM 60 MINUTES"
+                android:id="@+id/btalarm60"
+                android:layout_marginTop="5dp"
+                android:theme="@style/MyButton"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ALARM 90 MINUTES"
+                android:id="@+id/btalarm90"
+                android:layout_marginTop="5dp"
+                android:theme="@style/MyButton"
+                android:layout_gravity="center_horizontal" />
         </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="SET ALARM"
-            android:textColor="@color/button"
-            android:id="@+id/textView"
-            android:layout_marginTop="5dp"
-            android:layout_gravity="center_horizontal" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ALARM 30 MINUTES"
-            android:id="@+id/btalarm30"
-            android:layout_marginTop="5dp"
-            android:theme="@style/MyButton"
-            android:layout_gravity="center_horizontal" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ALARM 60 MINUTES"
-            android:id="@+id/btalarm60"
-            android:layout_marginTop="5dp"
-            android:theme="@style/MyButton"
-            android:layout_gravity="center_horizontal" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ALARM 90 MINUTES"
-            android:id="@+id/btalarm90"
-            android:layout_marginTop="5dp"
-            android:theme="@style/MyButton"
-            android:layout_gravity="center_horizontal" />
-    </LinearLayout>
+    </FrameLayout>
 </LinearLayout>

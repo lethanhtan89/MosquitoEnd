@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.transition.Fade;
+import android.transition.Slide;
 import android.widget.ImageView;
 
 import org.w3c.dom.ProcessingInstruction;
@@ -16,7 +18,6 @@ public class SplashActivity extends AppCompatActivity {
     private Handler handler;
     private static final int POST_DISPLAY_TIME = 1500;
     private ImageView imgSplash;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +30,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(i);
-                overridePendingTransition(R.animator.in, R.animator.out);
+                overridePendingTransition(R.animator.activity_open_translate, R.animator.activity_close_scale);
                 finish();
             }
         };
