@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:id="@+id/selected" android:oneshot="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/img_splash_land01" android:duration="300" />
+    <item android:drawable="@drawable/img_splash_land02" android:duration="300" />
+    <item android:drawable="@drawable/img_splash_land03" android:duration="300" />
+
+</animation-list><!-- From: file:/D:/PROJECT/ANDROID/MosquitoEnd/app/src/main/res/drawable-land/splash_animation.xml -->

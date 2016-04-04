@@ -2,22 +2,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="@drawable/bg_splash_land"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context =".SplashActivity">
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_vertical">
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="center"
             android:paddingLeft="0dp"
-            android:src="@drawable/img_splash_land"
-            android:id="@+id/img_splash"
-            android:layout_gravity="center_vertical"/>
+            android:id="@+id/img_splash" />
     </LinearLayout>
 </LinearLayout>
 <!-- From: file:/D:/PROJECT/ANDROID/MosquitoEnd/app/src/main/res/layout-land/activity_splash.xml -->
