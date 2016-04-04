@@ -40,8 +40,9 @@ public class Mosquito3Activity extends AppCompatActivity {
         btOn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mediaPlayer = MediaPlayer.create(Mosquito3Activity.this, R.raw.mosquito_sound1);
+                mediaPlayer = MediaPlayer.create(Mosquito3Activity.this, R.raw.mosquito_sound3);
                 mediaPlayer.start();
+                mediaPlayer.setLooping(true);
             }
         });
 
@@ -142,7 +143,7 @@ public class Mosquito3Activity extends AppCompatActivity {
     }
 
     public void setAlarmAfter30(){
-        mediaPlayer = MediaPlayer.create(Mosquito3Activity.this, R.raw.mosquito_sound1);
+        mediaPlayer = MediaPlayer.create(Mosquito3Activity.this, R.raw.mosquito_sound3);
         handler = new Handler();
         runnable = new Runnable() {
             @Override
@@ -155,7 +156,7 @@ public class Mosquito3Activity extends AppCompatActivity {
     }
 //Set alarm 60 minites
     public void setAlarmAfter60(){
-        mediaPlayer = MediaPlayer.create(Mosquito3Activity.this, R.raw.mosquito_sound1);
+        mediaPlayer = MediaPlayer.create(Mosquito3Activity.this, R.raw.mosquito_sound3);
         handler = new Handler();
         runnable = new Runnable() {
             @Override
@@ -168,7 +169,7 @@ public class Mosquito3Activity extends AppCompatActivity {
     }
 
     public void setAlarmAfter90(){
-        mediaPlayer = MediaPlayer.create(Mosquito3Activity.this, R.raw.mosquito_sound1);
+        mediaPlayer = MediaPlayer.create(Mosquito3Activity.this, R.raw.mosquito_sound3);
         handler = new Handler();
         runnable = new Runnable() {
             @Override
