@@ -59,6 +59,7 @@ public class Mosquito1Activity extends AppCompatActivity {
                 //btOn.invalidate();
                 mediaPlayer = MediaPlayer.create(Mosquito1Activity.this, R.raw.mosquito_sound1);
                 mediaPlayer.start();
+                mediaPlayer.setLooping(true);
             }
         });
 
@@ -159,7 +160,6 @@ public class Mosquito1Activity extends AppCompatActivity {
         super.onBackPressed();
         Intent i = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(i);
-        //overridePendingTransition(R.animator.card_flip_left_in,R.animator.card_flip_left_out);
         finish();;
     }
 

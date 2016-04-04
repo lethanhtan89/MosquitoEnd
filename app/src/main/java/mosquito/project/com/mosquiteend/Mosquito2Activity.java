@@ -42,6 +42,7 @@ public class Mosquito2Activity extends AppCompatActivity {
             public void onClick(View v) {
                 mediaPlayer = MediaPlayer.create(Mosquito2Activity.this, R.raw.mosquito_sound2);
                 mediaPlayer.start();
+                mediaPlayer.setLooping(true);
             }
         });
 
