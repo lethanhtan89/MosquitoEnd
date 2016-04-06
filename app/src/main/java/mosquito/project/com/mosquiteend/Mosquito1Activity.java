@@ -5,13 +5,11 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.PorterDuff;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AnalogClock;
 import android.widget.Button;
@@ -51,15 +49,23 @@ public class Mosquito1Activity extends AppCompatActivity {
         imageView = (ImageView) findViewById(R.id.imgMos);
         analogClock = (AnalogClock) findViewById(R.id.analogClock);
         digitalClock = (DigitalClock) findViewById(R.id.digitalClock);
+        mediaPlayer = MediaPlayer.create(Mosquito1Activity.this, R.raw.mosquito_sound1);
 
         btOn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //btOn.setBackgroundColor(getResources().getColor(R.color.button_change));
                 //btOn.invalidate();
-                mediaPlayer = MediaPlayer.create(Mosquito1Activity.this, R.raw.mosquito_sound1);
-                mediaPlayer.start();
-                mediaPlayer.setLooping(true);
+                if(mediaPlayer.isPlaying()){
+                    //mediaPlayer.pause();
+                    //mediaPlayer.setLooping(false);
+                    Toast.makeText(Mosquito1Activity.this, "Please again", Toast.LENGTH_LONG).show();
+                    mediaPlayer.pause();
+                }
+                else {
+                    mediaPlayer.start();
+                    mediaPlayer.setLooping(true);
+                }
             }
         });
 
@@ -80,7 +86,7 @@ public class Mosquito1Activity extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setTitle("SET ALARM");
                 builder.setMessage("Would you like set alarm after 30 minutes ?");
-                builder.setIcon(R.mipmap.mosquito_icon);
+                builder.setIcon(R.mipmap.ic_launcher);
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -107,7 +113,7 @@ public class Mosquito1Activity extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setTitle("SET ALARM");
                 builder.setMessage("Would you like to set alarm after 60 minutes");
-                builder.setIcon(R.mipmap.mosquito_icon);
+                builder.setIcon(R.mipmap.ic_launcher);
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -134,7 +140,7 @@ public class Mosquito1Activity extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setTitle("SET ALARM");
                 builder.setMessage("Would you like to set alarm after 90 minutes ");
-                builder.setIcon(R.mipmap.mosquito_icon);
+                builder.setIcon(R.mipmap.ic_launcher);
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -156,11 +162,22 @@ public class Mosquito1Activity extends AppCompatActivity {
     }
 
     @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+
+        if(keyCode == KeyEvent.KEYCODE_HOME) {
+            //Ask the user if they want to quit
+            mediaPlayer.stop();
+        }
+        return true;
+    }
+
+    @Override
     public void onBackPressed() {
         super.onBackPressed();
         Intent i = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(i);
-        finish();;
+        finish();
+        mediaPlayer.stop();
     }
 
     //set Sound Alarm After 30 minutes

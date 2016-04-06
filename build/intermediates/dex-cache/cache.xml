@@ -2,13 +2,6 @@
 <items version="2" >
 
     <item
-        jar="D:\PROJECT\ANDROID\MosquitoEnd\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
-        <dex dex="D:\PROJECT\ANDROID\MosquitoEnd\app\build\intermediates\pre-dexed\debug\classes-cca1b154eceafbd41021409c72f6a8e27edac424.jar" />
-    </item>
-    <item
         jar="D:\ANDROID\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
         jumboMode="false"
         revision="23.0.2"
@@ -23,6 +16,13 @@
         <dex dex="D:\PROJECT\ANDROID\MosquitoEnd\app\build\intermediates\pre-dexed\debug\classes-3eac1e432e8604c042086e6aba42f0129a51d426.jar" />
     </item>
     <item
+        jar="D:\PROJECT\ANDROID\MosquitoEnd\app\build\intermediates\exploded-aar\com.android.support\design\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="D:\PROJECT\ANDROID\MosquitoEnd\app\build\intermediates\pre-dexed\debug\classes-980e8b9055fc4dd88d4f0be407390909a07c17b2.jar" />
+    </item>
+    <item
         jar="D:\PROJECT\ANDROID\MosquitoEnd\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
         jumboMode="false"
         revision="23.0.2"
@@ -30,18 +30,18 @@
         <dex dex="D:\PROJECT\ANDROID\MosquitoEnd\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1-032a6cd8e9ea5fd9e2981f3962ede5439e0700ea.jar" />
     </item>
     <item
+        jar="D:\PROJECT\ANDROID\MosquitoEnd\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="D:\PROJECT\ANDROID\MosquitoEnd\app\build\intermediates\pre-dexed\debug\classes-cca1b154eceafbd41021409c72f6a8e27edac424.jar" />
+    </item>
+    <item
         jar="D:\PROJECT\ANDROID\MosquitoEnd\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="5c5699834e9722f1c288fea2de82725d078ba127">
         <dex dex="D:\PROJECT\ANDROID\MosquitoEnd\app\build\intermediates\pre-dexed\debug\classes-e37bff3ddf2b9f529d9b74962e137dd5de082aa4.jar" />
-    </item>
-    <item
-        jar="D:\PROJECT\ANDROID\MosquitoEnd\app\build\intermediates\exploded-aar\com.android.support\design\23.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
-        <dex dex="D:\PROJECT\ANDROID\MosquitoEnd\app\build\intermediates\pre-dexed\debug\classes-980e8b9055fc4dd88d4f0be407390909a07c17b2.jar" />
     </item>
 
 </items>
