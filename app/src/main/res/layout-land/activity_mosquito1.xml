@@ -54,7 +54,6 @@
                 android:text="OFF"
                 android:theme="@style/MyButton"
                 android:id="@+id/btOff" />
-
         </LinearLayout>
 
         <TextView

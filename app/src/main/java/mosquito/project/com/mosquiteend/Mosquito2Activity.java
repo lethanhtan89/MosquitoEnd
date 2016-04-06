@@ -36,12 +36,19 @@ public class Mosquito2Activity extends AppCompatActivity {
         btAlarm30 = (Button) findViewById(R.id.btalarm30);
         btAlarm60 = (Button) findViewById(R.id.btalarm60);
         btAlarm90 = (Button) findViewById(R.id.btalarm90);
+        mediaPlayer = MediaPlayer.create(Mosquito2Activity.this, R.raw.mosquito_sound2);
 
         btOn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mediaPlayer = MediaPlayer.create(Mosquito2Activity.this, R.raw.mosquito_sound2);
-                mediaPlayer.start();
+
+                if(mediaPlayer.isPlaying()){
+                    Toast.makeText(Mosquito2Activity.this,"Please Again", Toast.LENGTH_LONG).show();
+                    mediaPlayer.pause();
+                }
+                else {
+                    mediaPlayer.start();
+                }
                 mediaPlayer.setLooping(true);
             }
         });
@@ -61,7 +68,7 @@ public class Mosquito2Activity extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setTitle("SET ALARM");
                 builder.setMessage("Would you like to set Alarm after 30 minutes");
-                builder.setIcon(R.mipmap.mosquito_icon);
+                builder.setIcon(R.mipmap.ic_launcher);
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -87,7 +94,7 @@ public class Mosquito2Activity extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setTitle("SET ALARM");
                 builder.setMessage("Would you like to set Alarm after 60 minutes");
-                builder.setIcon(R.mipmap.mosquito_icon);
+                builder.setIcon(R.mipmap.ic_launcher);
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -113,7 +120,7 @@ public class Mosquito2Activity extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setTitle("SET ALARM");
                 builder.setMessage("Would you like to set Alarm after 90 minutes");
-                builder.setIcon(R.mipmap.mosquito_icon);
+                builder.setIcon(R.mipmap.ic_launcher);
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -140,6 +147,7 @@ public class Mosquito2Activity extends AppCompatActivity {
         Intent i = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(i);
         finish();
+        mediaPlayer.stop();
     }
 
     public void setAlarmAfter30(){
