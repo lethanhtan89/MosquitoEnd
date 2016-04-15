@@ -38,7 +38,7 @@
     <color name="background_material_light">@color/material_grey_50</color>
     <!-- From: file:/D:/PROJECT/ANDROID/MosquitoEnd/app/src/main/res/values/colors.xml -->
     <eat-comment/>
-    <color name="before_click">#FF6600</color>
+    <color name="before_click">#FFB74D</color>
     <!-- From: file:/D:/PROJECT/ANDROID/MosquitoEnd/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
@@ -1328,7 +1328,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <style name="MyButton" parent="MyMaterialTheme">
+    <style name="MyButton" parent="Animation.AppCompat.Dialog">
         <item name="colorControlHighlight">@color/before_click</item>
         <item name="colorButtonNormal">@color/after_click</item>
     </style>
