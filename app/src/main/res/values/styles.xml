@@ -16,7 +16,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="MyButton" parent="MyMaterialTheme">
+    <style name="MyButton" parent="Theme.AppCompat.Light">
         <item name="colorControlHighlight">@color/before_click</item>
         <item name="colorButtonNormal">@color/after_click</item>
     </style>

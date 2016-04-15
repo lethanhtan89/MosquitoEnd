@@ -9,7 +9,6 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AnalogClock;
 import android.widget.Button;
@@ -162,18 +161,9 @@ public class Mosquito1Activity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-
-        if(keyCode == KeyEvent.KEYCODE_HOME) {
-            //Ask the user if they want to quit
-            mediaPlayer.stop();
-        }
-        return true;
-    }
-
-    @Override
     public void onBackPressed() {
         super.onBackPressed();
+        //Toast.makeText(this, "Comback", Toast.LENGTH_LONG).show();
         Intent i = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(i);
         finish();
