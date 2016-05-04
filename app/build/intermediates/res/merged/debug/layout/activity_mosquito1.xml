@@ -48,7 +48,6 @@
                 android:text="ON"
                 android:theme="@style/MyButton"
                 android:id="@+id/btOn"
-                style="@style/Widget.AppCompat.Button"
                 android:layout_marginRight="10dp" />
 
             <Button

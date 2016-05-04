@@ -13,7 +13,7 @@ import android.widget.ImageView;
 public class SplashActivity extends AppCompatActivity {
     private Runnable runnable;
     private Handler handler;
-    private static final int POST_DISPLAY_TIME = 2000;
+    private static final int POST_DISPLAY_TIME = 2500;
     private ImageView imgSplash;
     private AnimationDrawable animationDrawable;
 
@@ -31,12 +31,13 @@ public class SplashActivity extends AppCompatActivity {
         runnable = new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(i);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
                 overridePendingTransition(R.animator.activity_open_translate, R.animator.activity_close_scale);
                 finish();
             }
         };
         handler.postDelayed(runnable, POST_DISPLAY_TIME);
+
     }
 }
