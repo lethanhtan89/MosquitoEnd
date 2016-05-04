@@ -2261,20 +2261,16 @@ containing a value of this type.
         public static final int design_fab_background=0x7f020048;
         public static final int design_snackbar_background=0x7f020049;
         public static final int img_splash=0x7f02004a;
-        public static final int img_splash01=0x7f02004b;
-        public static final int img_splash02=0x7f02004c;
-        public static final int img_splash03=0x7f02004d;
-        public static final int img_splash_land=0x7f02004e;
-        public static final int img_splash_land01=0x7f02004f;
-        public static final int img_splash_land02=0x7f020050;
-        public static final int img_splash_land03=0x7f020051;
-        public static final int mosquito_title=0x7f020052;
-        public static final int mosquitoend=0x7f020053;
-        public static final int notification_template_icon_bg=0x7f020058;
-        public static final int pic_sound_1=0x7f020054;
-        public static final int pic_sound_2=0x7f020055;
-        public static final int pic_sound_3=0x7f020056;
-        public static final int splash_animation=0x7f020057;
+        public static final int img_splash_land=0x7f02004b;
+        public static final int img_splash_land01=0x7f02004c;
+        public static final int img_splash_land02=0x7f02004d;
+        public static final int img_splash_land03=0x7f02004e;
+        public static final int mosquito_title=0x7f02004f;
+        public static final int mosquitoend=0x7f020050;
+        public static final int notification_template_icon_bg=0x7f020054;
+        public static final int pic_sound_1=0x7f020051;
+        public static final int pic_sound_2=0x7f020052;
+        public static final int pic_sound_3=0x7f020053;
     }
     public static final class id {
         public static final int action0=0x7f0f0077;
@@ -2292,7 +2288,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0f0055;
         public static final int action_mode_bar_stub=0x7f0f0054;
         public static final int action_mode_close_button=0x7f0f003a;
-        public static final int action_settings=0x7f0f0085;
+        public static final int action_settings=0x7f0f0084;
         public static final int activity_chooser_view_content=0x7f0f003b;
         public static final int alertTitle=0x7f0f0047;
         public static final int always=0x7f0f0030;
@@ -2381,7 +2377,6 @@ containing a value of this type.
         public static final int search_src_text=0x7f0f0061;
         public static final int search_voice_btn=0x7f0f0065;
         public static final int select_dialog_listview=0x7f0f0066;
-        public static final int selected=0x7f0f0084;
         public static final int shortcut=0x7f0f0051;
         public static final int showCustom=0x7f0f0010;
         public static final int showHome=0x7f0f0011;
