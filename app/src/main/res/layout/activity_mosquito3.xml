@@ -9,7 +9,6 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:background="@drawable/bg"
         android:weightSum="1"
         android:layout_height="match_parent">
 
@@ -32,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/digitalClock"
-            android:layout_weight="0.125"
+            android:layout_weight="0.07"
             android:textColor="@color/button"
             android:layout_marginBottom="5dp"
             android:layout_gravity="center_horizontal" />
