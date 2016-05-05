@@ -7,6 +7,8 @@
     <color name="navigationBarColor">#000000</color>
     <color name="colorAccent">#FF80AB</color>
     <color name="button">#FFFFFF</color>
-    <color name="before_click">#FFB74D</color>
+    <color name="before_click">#FF6600</color>
     <color name="after_click">#FFFFFF</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
 </resources>

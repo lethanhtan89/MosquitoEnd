@@ -7,11 +7,11 @@
         android:toYScale="80%p"
         android:pivotX="50%p"
         android:pivotY="50%p"
-        android:duration="500" />
+        android:duration="200" />
 
     <alpha android:fromAlpha="1"
         android:toAlpha="0.5"
-        android:duration="500"/>
+        android:duration="200"/>
 
 </set>
 <!-- From: file:/D:/PROJECT/ANDROID/MosquitoEnd/app/src/main/res/animator/activity_close_scale.xml -->

@@ -1,12 +1,9 @@
 package mosquito.project.com.mosquiteend;
 
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         imgMos3 = (ImageView) findViewById(R.id.img_mos3);
         imgTitle = (ImageView) findViewById(R.id.img_title);
 
-        overridePendingTransition(R.animator.activity_open_translate, R.animator.activity_close_scale);
         imgMos1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,31 +55,29 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+/*
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if(keyCode == KeyEvent.KEYCODE_BACK) {
             //Ask the user if they want to quit
-            new AlertDialog.Builder(this)
-                    .setIcon(android.R.drawable.ic_dialog_alert)
-                    .setTitle("EXIT")
-                    .setMessage("Would you like to exit Application ?")
-                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-
-                            //Stop the activity
-                            MainActivity.this.finish();
-                        }
-                    })
-                    .setNegativeButton("No", null)
-                    .show();
+            Intent intent = new Intent(getApplicationContext(), SplashActivity.class);
+            startActivity(intent);
+            finish();
             return true;
         }
         else {
             return super.onKeyDown(keyCode, event);
         }
+    }
+*/
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(getApplicationContext(), SplashActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.animator.activity_close_translate, R.animator.activity_open_scale);
+        finish();
     }
 
     @Override

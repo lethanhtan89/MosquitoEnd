@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <translate android:fromXDelta="100%"
-        android:toXDelta="0%"
-        android:duration="500" />
-
+    <translate
+        android:fromXDelta="100%p"
+        android:toXDelta="0%p"
+        android:fillAfter="true"
+        android:duration="200"/>
 </set>
 <!-- From: file:/D:/PROJECT/ANDROID/MosquitoEnd/app/src/main/res/animator/activity_open_translate.xml -->
