@@ -84,7 +84,7 @@ public class Mosquito1Activity extends AppCompatActivity {
                 //btAlarm30.setBackgroundColor(getResources().getColor(R.color.button_change));
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setTitle("SET ALARM");
-                builder.setMessage("Would you like set alarm after 30 minutes ?");
+                builder.setMessage("Would you like to set alarm after 30 minutes ?");
                 builder.setIcon(R.mipmap.ic_launcher);
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
