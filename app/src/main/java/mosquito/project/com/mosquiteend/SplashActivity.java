@@ -43,7 +43,7 @@ public class SplashActivity extends AppCompatActivity {
                 }
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
-                //overridePendingTransition(R.animator.activity_open_translate, R.animator.zoom_in);
+                overridePendingTransition(R.animator.activity_open_translate, R.animator.zoom_in);
                 finish();
             }
         });
@@ -54,14 +54,14 @@ public class SplashActivity extends AppCompatActivity {
                 //Toast.makeText(getApplicationContext(), "Hello World", Toast.LENGTH_LONG).show();
                 if(mediaPlayer.isPlaying()) {
                     mediaPlayer.pause();
-                    //imgSplash.setImageResource(R.drawable.img_splash);
-                    imgSplash.setColorFilter(R.color.black);
+                    imgSplash.setImageResource(R.drawable.img_splash);
+                    //imgSplash.setColorFilter(R.color.white);
                 } else {
                     mediaPlayer.start();
-                    //imgSplash.setImageResource(R.drawable.img_splash_after);
+                    imgSplash.setImageResource(R.drawable.img_splash_after);
                     //imgSplash.setColorFilter(null);
                     //imgSplash.setColorFilter(R.color.white, PorterDuff.Mode.DARKEN);
-                    imgSplash.refreshDrawableState();
+                    //imgSplash.setColorFilter(R.color.black);
                 }
             }
         });

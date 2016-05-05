@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         super.onBackPressed();
         Intent intent = new Intent(getApplicationContext(), SplashActivity.class);
         startActivity(intent);
-        overridePendingTransition(R.animator.activity_close_translate, R.animator.activity_open_scale);
+        //overridePendingTransition(R.animator.activity_close_translate, R.animator.activity_open_scale);
         finish();
     }
 

@@ -10,5 +10,5 @@
     <color name="before_click">#FF6600</color>
     <color name="after_click">#FFFFFF</color>
     <color name="black">#000</color>
-    <color name="white">#fff</color>
+    <color name="white">#FFFF99</color>
 </resources>
