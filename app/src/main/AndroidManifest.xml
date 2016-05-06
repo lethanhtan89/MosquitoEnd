@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="mosquito.project.com.mosquiteend" >
+    package="mosquito.project.com.mosquitoend" >
 
     <application
         android:allowBackup="true"
@@ -8,6 +8,7 @@
         android:label="@string/app_name"
         android:largeHeap="true"
         android:theme="@style/MosquitoEnd" >
+
         <activity
             android:name=".SplashActivity"
             android:screenOrientation="portrait"
@@ -17,9 +18,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" android:label="@string/app_name" ></activity>
-        <activity android:name=".Mosquito1Activity" android:label="@string/app_name"></activity>
-        <activity android:name=".Mosquito2Activity" android:label="@string/app_name"></activity>
-        <activity android:name=".Mosquito3Activity" android:label="@string/app_name"></activity>
+
+        <activity
+            android:name="mosquito.project.com.mosquitoend.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name="mosquito.project.com.mosquitoend.Mosquito1Activity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="mosquito.project.com.mosquitoend.Mosquito2Activity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="mosquito.project.com.mosquitoend.Mosquito3Activity"
+            android:label="@string/app_name">
+        </activity>
     </application>
 </manifest>
