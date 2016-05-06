@@ -657,11 +657,11 @@ int id image 0x7f0f003d
 int id imgMos 0x7f0f006c
 int id img_back 0x7f0f0067
 int id img_more 0x7f0f0076
-int id img_mos1 0x7f0f0069
-int id img_mos2 0x7f0f006a
-int id img_mos3 0x7f0f006b
+int id img_mos1 0x7f0f0068
+int id img_mos2 0x7f0f0069
+int id img_mos3 0x7f0f006a
 int id img_splash 0x7f0f0075
-int id img_title 0x7f0f0068
+int id img_title 0x7f0f006b
 int id info 0x7f0f0084
 int id left 0x7f0f0020
 int id line1 0x7f0f007e

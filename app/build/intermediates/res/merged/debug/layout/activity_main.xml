@@ -21,33 +21,23 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/mosquito_title"
-            android:layout_weight="0.25"
-            android:scaleType="fitCenter"
-            android:id="@+id/img_title" />
-
-        <ImageView
-            android:layout_width="match_parent"
             android:layout_height="100dp"
             android:src="@drawable/pic_sound_1"
-            android:layout_weight="0.25"
-            android:layout_marginBottom="5dp"
+            android:layout_weight="0.3"
             android:id="@+id/img_mos1" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:src="@drawable/pic_sound_2"
-            android:layout_weight="0.25"
-            android:layout_marginBottom="5dp"
+            android:layout_weight="0.3"
             android:id="@+id/img_mos2" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:src="@drawable/pic_sound_3"
-            android:layout_weight="0.25"
+            android:layout_weight="0.3"
             android:id="@+id/img_mos3" />
     </LinearLayout>
 </RelativeLayout>
