@@ -1,4 +1,4 @@
-package mosquito.project.com.mosquitoend;
+package mosquito.project.inetwork.mosquitoend;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -16,7 +16,7 @@ import android.widget.Toast;
 /**
  * Created by Administrator on 29/03/2016.
  */
-public class Mosquito3Activity extends AppCompatActivity {
+public class Mosquito2Activity extends AppCompatActivity {
     private MediaPlayer mediaPlayer;
     private Button btOn, btOff, btAlarm30, btAlarm60, btAlarm90;
     private ImageButton img;
@@ -29,20 +29,21 @@ public class Mosquito3Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mosquito3);
+        setContentView(R.layout.activity_mosquito2);
 
         btOn = (Button) findViewById(R.id.btOn);
         btOff = (Button) findViewById(R.id.btOff);
         btAlarm30 = (Button) findViewById(R.id.btalarm30);
         btAlarm60 = (Button) findViewById(R.id.btalarm60);
         btAlarm90 = (Button) findViewById(R.id.btalarm90);
-        mediaPlayer = MediaPlayer.create(Mosquito3Activity.this, R.raw.mosquito_sound3);
+        mediaPlayer = MediaPlayer.create(Mosquito2Activity.this, R.raw.mosquito_sound2);
 
         btOn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 if(mediaPlayer.isPlaying()){
-                    Toast.makeText(Mosquito3Activity.this,"Please again", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Mosquito2Activity.this,"Please Again", Toast.LENGTH_SHORT).show();
                     mediaPlayer.pause();
                 }
                 else {
@@ -71,7 +72,7 @@ public class Mosquito3Activity extends AppCompatActivity {
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(Mosquito3Activity.this, "Successfull", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Mosquito2Activity.this, "Successfull", Toast.LENGTH_SHORT).show();
                         setAlarmAfter30();
                         dialog.cancel();
                     }
@@ -97,7 +98,7 @@ public class Mosquito3Activity extends AppCompatActivity {
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(Mosquito3Activity.this, "Successfull", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Mosquito2Activity.this, "Successfull", Toast.LENGTH_SHORT).show();
                         setAlarmAfter60();
                         dialog.cancel();
                     }
@@ -123,7 +124,7 @@ public class Mosquito3Activity extends AppCompatActivity {
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(Mosquito3Activity.this, "Successfull", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Mosquito2Activity.this, "Successfull", Toast.LENGTH_SHORT).show();
                         setAlarmAfter90();
                         dialog.cancel();
                     }
@@ -150,7 +151,7 @@ public class Mosquito3Activity extends AppCompatActivity {
     }
 
     public void setAlarmAfter30(){
-        mediaPlayer = MediaPlayer.create(Mosquito3Activity.this, R.raw.mosquito_sound3);
+        mediaPlayer = MediaPlayer.create(Mosquito2Activity.this, R.raw.mosquito_sound2);
         handler = new Handler();
         runnable = new Runnable() {
             @Override
@@ -161,9 +162,9 @@ public class Mosquito3Activity extends AppCompatActivity {
         };
         handler.postDelayed(runnable, POST_DISPLAY_TIME_30);
     }
-//Set alarm 60 minites
+
     public void setAlarmAfter60(){
-        mediaPlayer = MediaPlayer.create(Mosquito3Activity.this, R.raw.mosquito_sound3);
+        mediaPlayer = MediaPlayer.create(Mosquito2Activity.this, R.raw.mosquito_sound2);
         handler = new Handler();
         runnable = new Runnable() {
             @Override
@@ -176,7 +177,7 @@ public class Mosquito3Activity extends AppCompatActivity {
     }
 
     public void setAlarmAfter90(){
-        mediaPlayer = MediaPlayer.create(Mosquito3Activity.this, R.raw.mosquito_sound3);
+        mediaPlayer = MediaPlayer.create(Mosquito2Activity.this, R.raw.mosquito_sound2);
         handler = new Handler();
         runnable = new Runnable() {
             @Override

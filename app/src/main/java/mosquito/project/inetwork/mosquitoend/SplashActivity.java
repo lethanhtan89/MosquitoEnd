@@ -1,4 +1,4 @@
-package mosquito.project.com.mosquitoend;
+package mosquito.project.inetwork.mosquitoend;
 
 import android.app.ProgressDialog;
 import android.content.DialogInterface;

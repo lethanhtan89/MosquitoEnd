@@ -1,4 +1,4 @@
-package mosquito.project.com.mosquitoend;
+package mosquito.project.inetwork.mosquitoend;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+
 
 public class MainActivity extends AppCompatActivity {
     private ImageButton imageButton;

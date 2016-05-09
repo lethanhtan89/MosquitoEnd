@@ -2,7 +2,7 @@
 manifest
 ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:2:1-43:12
 	package
-		ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:3:5-47
+		ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:3:5-52
 		INJECTED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml
 		INJECTED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -32,7 +32,7 @@ MERGED from [com.android.support:cardview-v7:23.1.1] D:\PROJECT\ANDROID\Mosquito
 		ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:9:9-33
 	android:theme
 		ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:10:9-43
-activity#mosquito.project.com.mosquitoend.SplashActivity
+activity#mosquito.project.inetwork.mosquitoend.SplashActivity
 ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:12:9-20:20
 	android:screenOrientation
 		ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:14:13-49
@@ -50,32 +50,32 @@ category#android.intent.category.LAUNCHER
 ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:18:17-77
 	android:name
 		ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:18:27-74
-activity#mosquito.project.com.mosquitoend.MainActivity
+activity#mosquito.project.inetwork.mosquitoend.MainActivity
 ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:22:9-26:20
 	android:screenOrientation
 		ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:24:13-49
 	android:label
 		ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:25:13-45
 	android:name
-		ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:23:13-73
-activity#mosquito.project.com.mosquitoend.Mosquito1Activity
+		ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:23:13-41
+activity#mosquito.project.inetwork.mosquitoend.Mosquito1Activity
 ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:28:9-31:20
 	android:label
 		ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:30:13-45
 	android:name
-		ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:29:13-78
-activity#mosquito.project.com.mosquitoend.Mosquito2Activity
+		ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:29:13-46
+activity#mosquito.project.inetwork.mosquitoend.Mosquito2Activity
 ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:33:9-36:20
 	android:label
 		ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:35:13-45
 	android:name
-		ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:34:13-78
-activity#mosquito.project.com.mosquitoend.Mosquito3Activity
+		ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:34:13-46
+activity#mosquito.project.inetwork.mosquitoend.Mosquito3Activity
 ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:38:9-41:20
 	android:label
 		ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:40:13-45
 	android:name
-		ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:39:13-78
+		ADDED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml:39:13-46
 uses-sdk
 INJECTED from D:\PROJECT\ANDROID\MosquitoEnd\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.1.1] D:\PROJECT\ANDROID\MosquitoEnd\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
