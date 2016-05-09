@@ -1,4 +1,4 @@
-package mosquito.project.com.mosquitoend;
+package mosquito.project.inetwork.mosquitoend;
 
 import android.app.AlertDialog;
 import android.content.Context;

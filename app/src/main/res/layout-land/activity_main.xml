@@ -2,7 +2,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_splash_land"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context =".MainActivity">
 
@@ -23,7 +22,6 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/mosquito_title"
             android:layout_weight="0.25"
             android:id="@+id/img_title" />
 
