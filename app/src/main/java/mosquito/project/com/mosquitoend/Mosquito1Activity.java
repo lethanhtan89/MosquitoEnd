@@ -210,7 +210,7 @@ public class Mosquito1Activity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setTitle("EXIT");
         builder.setMessage("Would you like to exit Apps ?");
-        builder.setIcon(R.mipmap.mosquito_icon);
+        builder.setIcon(R.mipmap.ic_launcher);
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
